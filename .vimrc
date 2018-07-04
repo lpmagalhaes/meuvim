@@ -12,16 +12,15 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 "Plugins
+"Javascript"
 Plugin 'pangloss/vim-javascript'
-"Plugin 'mxw/vim-jsx'
-"Plugin 'othree/yajs.vim'
-"Plugin 'jelera/vim-javascript-syntax'
+"React"
+Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
-Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'alvan/vim-closetag'
 
 "Chama todos plugins antes daqui
@@ -51,9 +50,9 @@ colorscheme monokai
 set gfn=Monospace\ 10
 set mousemodel=popup
 " Curos sem piscar
-set gcr=a:blinkon0
-set scrolloff=3
 set cursorline
+set gcr=a:blinbkon0
+set scrolloff=3
 " barra de status
 set laststatus=2
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
@@ -75,7 +74,6 @@ noremap <leader>gsh :Gpush<CR>
 noremap <leader>gll :Gpull<CR>
 noremap <leader>gs :Gstatus<CR>
 "Cores do jsx
-"let g:vim_jsx_pretty_enable_jsx_highlight=0
 let g:vim_jsx_pretty_colorful_config=1
 "Atalho para selecionar tudo
 map <C-a> <esc>ggVG<cr>
@@ -116,4 +114,4 @@ endfunction
 call AutoHighlightToggle()
 
 " Close tag"
-let g:closetag_filenames = "*.js"
+let g:closetag_filenames = "*.js,*.php,*.phtml"
