@@ -41,6 +41,8 @@ set smartcase
 "Visual
 set ruler
 set number
+set showmode
+set showcmd
 set tabstop=4
 set showmatch
 set autoindent
@@ -49,6 +51,7 @@ syntax on
 colorscheme monokai
 set gfn=Monospace\ 10
 set mousemodel=popup
+set columns=88
 " Curos sem piscar
 set cursorline
 set gcr=a:blinbkon0
@@ -94,6 +97,12 @@ nnoremap N Nzzzv
 " passagem de buffer
 noremap <leader>q :bp<CR>
 noremap <leader>w :bn<CR>
+" ajustes para nao travar 
+cnoreabbrev Wq wq
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
 " funcao para iluminar quando cursos encima 
 function! AutoHighlightToggle()
 	let @/ = ''
