@@ -108,6 +108,7 @@ cnoreabbrev wQ wq
 cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
+cnoreabbrev Qall qall
 " funcao para iluminar quando cursos encima 
 function! AutoHighlightToggle()
 	let @/ = ''
@@ -128,7 +129,7 @@ endfunction
 call AutoHighlightToggle()
 
 " Close tag"
-let g:closetag_filenames = "*.js,*.php,*.phtml"
+" let g:closetag_filenames = /"*.js,*.php,*.phtml/"
 " html in php
 let php_htmlInStrings = 1
 let php_smart_members=1
