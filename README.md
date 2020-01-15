@@ -1,7 +1,8 @@
 # Configuração do meu Vim
 
-1. Instalando o Vim
+1. Instalando o bibliotecas e Vim
 
+sudo apt-get install libncurses5-dev 
 sudo git clone https://github.com/vim/vim.git 
 cd vim/src
 sudo make
