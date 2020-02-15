@@ -25,6 +25,7 @@ Plugin 'ervandew/supertab'
 Plugin 'alvan/vim-closetag'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'elzr/vim-json'
+Plugin 'tomlion/vim-solidity'
 
 "Chama todos plugins antes daqui
 call vundle#end()
