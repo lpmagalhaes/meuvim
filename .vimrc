@@ -82,10 +82,10 @@ let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#branch#enabled=1
 "Mapeando git
 noremap <leader>ga :Gwrite<CR>
-noremap <leader>gc :Gcommit<CR>
-noremap <leader>gsh :Gpush<CR>
-noremap <leader>gll :Gpull<CR>
-noremap <leader>gs :Gstatus<CR>
+noremap <leader>gc :Git commit<CR>
+noremap <leader>gsh :Git push<CR>
+noremap <leader>gll :Git pull<CR>
+noremap <leader>gs :Git<CR>
 "Cores do jsx
 let g:vim_jsx_pretty_colorful_config=1
 "Atalho para selecionar tudo
