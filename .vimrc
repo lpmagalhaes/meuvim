@@ -110,6 +110,9 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
+" sem esc
+inoremap <esc> <nop>
+inoremap jk <esc>
 " funcao para iluminar quando cursos encima 
 function! AutoHighlightToggle()
 	let @/ = ''
