@@ -113,6 +113,8 @@ cnoreabbrev Qall qall
 " sem esc
 inoremap <esc> <nop>
 inoremap jk <esc>
+" autocompletar
+inoremap <tab> <C-p>
 " funcao para iluminar quando cursos encima 
 function! AutoHighlightToggle()
 	let @/ = ''
